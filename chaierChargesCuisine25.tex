@@ -1,0 +1,91 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{geometry}
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+\title{Cahier des Charges \\ \textbf{Nom du Projet}}
+\author{Ma Société \\ Client : Nom du Client}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+% ===== 1. Introduction =====
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+Ce document constitue le cahier des charges du projet \textbf{Nom du Projet}. Il décrit les objectifs, les exigences fonctionnelles et techniques, ainsi que les contraintes à respecter.
+
+% ===== 2. Contexte et Objectifs =====
+\chapter{Contexte et Objectifs}
+\section{Contexte}
+Présentation du projet, du client et des enjeux.
+
+\section{Objectifs}
+\begin{itemize}
+    \item Objectif principal
+    \item Sous-objectifs (si nécessaire)
+\end{itemize}
+
+% ===== 3. Exigences Fonctionnelles =====
+\chapter{Exigences Fonctionnelles}
+\section{Fonctionnalités Principales}
+\begin{tabularx}{\textwidth}{|l|X|}
+    \hline
+    \textbf{ID} & \textbf{Description} \\ \hline
+    F1 & Description de la fonctionnalité 1 \\ \hline
+    F2 & Description de la fonctionnalité 2 \\ \hline
+\end{tabularx}
+
+\section{Cas d'Utilisation (Optionnel)}
+Décrire les scénarios d'utilisation sous forme de diagrammes ou de listes.
+
+% ===== 4. Exigences Techniques =====
+\chapter{Exigences Techniques}
+\section{Environnement Technique}
+\begin{itemize}
+    \item Système d'exploitation
+    \item Langages/frameworks
+    \item Base de données
+    \item Contraintes matérielles
+\end{itemize}
+
+\section{Performance et Sécurité}
+\begin{itemize}
+    \item Temps de réponse
+    \item Normes de sécurité (RGPD, etc.)
+\end{itemize}
+
+% ===== 5. Livrables et Planning =====
+\chapter{Livrables et Planning}
+\section{Livrables Attendus}
+Liste des documents, logiciels, rapports, etc., à fournir.
+
+\section{Planning Prévisionnel}
+\begin{tabularx}{\textwidth}{|l|X|r|}
+    \hline
+    \textbf{Phase} & \textbf{Description} & \textbf{Date} \\ \hline
+    Phase 1 & Analyse des besoins & JJ/MM/AAAA \\ \hline
+    Phase 2 & Développement & JJ/MM/AAAA \\ \hline
+    Phase 3 & Tests et livraison & JJ/MM/AAAA \\ \hline
+\end{tabularx}
+
+% ===== 6. Budget =====
+\chapter{Budget (Optionnel)}
+\section{Coûts Estimés}
+Tableau ou description des coûts (si applicable).
+
+% ===== 7. Conclusion =====
+\chapter*{Conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
+Résumé des points clés et validation par les parties prenantes.
+
+\end{document}
